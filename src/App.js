@@ -4,6 +4,7 @@ import HomePage from "./pages/homepage/HomePage"
 import ShopPage from './pages/homepage/shop/ShopPage';
 import {Route,Switch} from "react-router-dom"
 import Header from './components/header/Header.component';
+import Checkout from './pages/homepage/checkout/Checkout.page';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route exact path='/' component={HomePage}/>
         
         <Route path='/shop' component={ShopPage}/>
+        <Route exact path='/checkout' component={Checkout}/>
    
   
     </Switch>
