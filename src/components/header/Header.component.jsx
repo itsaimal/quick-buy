@@ -4,6 +4,8 @@ import CartDropdown from '../cart-dropdown/CartDropdown.component'
 import CartIcon from '../cart-icon/CartIcon.component'
 import "./Header.scss"
 import {connect} from "react-redux"
+import logo from "../../image/logo.png"
+
 
 
 function Header ({hidden}) {
@@ -11,7 +13,7 @@ function Header ({hidden}) {
         <div className="header">
             <Link className="logo-container" to="/">
                 <div className="logo">
-                Logo</div>
+                <img className="header-logo"  src={logo} alt="logo"/></div>
             </Link>
 
             <div className="options">

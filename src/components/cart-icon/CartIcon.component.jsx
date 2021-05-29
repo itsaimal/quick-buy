@@ -1,6 +1,6 @@
 import React from 'react'
 import "./CartIcon.scss"
-import heart from "../../image/heart.png"
+import liked from "../../image/liked.png"
 import {toggleCartHidden} from "../../redux/cart/cart.action"
 import {selectCartItemsCount} from "../../redux/cart/cart.selectors"
 
@@ -9,7 +9,7 @@ import {connect} from "react-redux";
 function CartIcon({toggleCartHidden,itemCount}) {
     return (
         <div className="cart-icon" onClick={toggleCartHidden}>
-            <img src='https://www.searchpng.com/wp-content/uploads/2019/02/favorite-icon-715x715.png' className="shopping-icon"/>
+            <img src={liked} className="liked-icon" alt="liked"/>
             <span className="item-count">{itemCount}</span>
             
         </div>

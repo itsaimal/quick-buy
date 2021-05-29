@@ -2,9 +2,9 @@ import React from 'react'
 import "./Checkout.scss"
 import {connect} from "react-redux"
 import {createStructuredSelector} from "reselect"
-import {selectCartItems,selectCartTotal} from "../../../redux/cart/cart.selectors"
+import {selectCartItems,selectCartTotal} from "../../redux/cart/cart.selectors"
 import CheckoutItem
- from "../../../components/checkout-item/CheckoutItem"
+ from "../../components/checkout-item/CheckoutItem"
 
 function Checkout({cartItems,total}) {
     return (
@@ -14,7 +14,7 @@ function Checkout({cartItems,total}) {
                 
                 <div className="header-block">
 
-                    <span className>Product
+                    <span >Product
 
                     </span>
 
@@ -23,7 +23,7 @@ function Checkout({cartItems,total}) {
 
                 <div className="header-block">
 
-                    <span className>
+                    <span >
                         Description
 
                     </span>
@@ -32,10 +32,10 @@ function Checkout({cartItems,total}) {
 
 
 
-                <div className="header-block">
+                <div className="">
 
-                    <span className>
-Quantity
+                    <span>
+Price
                     </span>
 
                 </div>
@@ -44,7 +44,7 @@ Quantity
 
                 <div className="header-block">
 
-                    <span className>
+                    <span >
 Remove
                     </span>
 
@@ -59,10 +59,10 @@ Remove
                     (<CheckoutItem key={cartItem.id} cartItem={cartItem}/>))
             }
 
-            <div className="total">
+            {/* <div className="total">
                 <span>TOTAL: ${total}</span>
 
-            </div>
+            </div> */}
         </div>
     )
 }
