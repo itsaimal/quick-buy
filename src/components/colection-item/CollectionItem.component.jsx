@@ -4,8 +4,9 @@ import "./CollectionItem.scss"
 import {connect} from "react-redux"
 import {addItem} from "../../redux/cart/cart.action"
 import favorite from "../../image/favourites.png"
+import {addDetailItem} from "../../redux/detail/detail.action"
 
-function CollectionItem({item, addItem}) {
+function CollectionItem({item, addItem,addDetailItem}) {
     const {name,price,imageUrl,miles,transmission,color} = item;
     return (
         <div className="collection-item">
@@ -33,7 +34,7 @@ function CollectionItem({item, addItem}) {
              
 
 
-                <CustomButton className="detail" >
+                <CustomButton onClick={() => addDetailItem(item)}className="detail" >
                     View Details
                 </CustomButton>
 
@@ -44,7 +45,8 @@ function CollectionItem({item, addItem}) {
 }
 
 const mapDispatchToProps = dispatch => ({
-    addItem: item => dispatch(addItem(item))
+    addItem: item => dispatch(addItem(item)),
+    addDetailItem: item => dispatch(addDetailItem(item))
 })
 
 export default connect(null, mapDispatchToProps)(CollectionItem)
