@@ -1,7 +1,12 @@
 import React from 'react'
 import "./DetailItem.scss"
+import {ClearItemFromDetail} from "../../redux/detail/detail.action"
+import {connect} from "react-redux"
 
-function DetailItem({item:{imageUrl,price,name}}) {
+function DetailItem({item,clearItem}) {
+
+    const {imageUrl,price,name} = item;
+
     return (
         <div className="collection-item">
        
@@ -15,7 +20,9 @@ function DetailItem({item:{imageUrl,price,name}}) {
             <span className="name">{name}</span>
             <span className="price">
       ${price}
-            </span>
+            </span>   <div className='remove-button' onClick={() => clearItem(item)}>
+          &#10005;
+        </div>
 
         </div>
         
@@ -23,4 +30,11 @@ function DetailItem({item:{imageUrl,price,name}}) {
     )
 }
 
-export default DetailItem
+const mapDispatchToProps = dispatch => ({
+
+   clearItem: item => dispatch(ClearItemFromDetail(item))
+    
+})
+
+
+export default connect(null,mapDispatchToProps)(DetailItem)

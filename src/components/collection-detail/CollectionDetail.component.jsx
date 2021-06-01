@@ -7,13 +7,13 @@ import DetailItem from "../detail-item/DetailItem"
 
 
 
-function CollectionDetail({details}) {
+function CollectionDetail({detailItems}) {
 
     return (
         <div className='details'>
         <div className='cart-items'>
           
-          {  details.map(detail => (
+          {  detailItems.map(detail => (
               <DetailItem key={detail.id} item={detail} />
             ))
           }
@@ -31,8 +31,9 @@ function CollectionDetail({details}) {
 }
 
 const mapStateToProps = createStructuredSelector({
-details: selectDetailItems
-})
+  detailItems: selectDetailItems
+});
+
 
 
 export default connect(mapStateToProps)(CollectionDetail);

@@ -5,8 +5,12 @@ import {connect} from "react-redux"
 import {addItem} from "../../redux/cart/cart.action"
 import favorite from "../../image/favourites.png"
 import {addDetailItem} from "../../redux/detail/detail.action"
+import {withRouter} from "react-router-dom"
 
-function CollectionItem({item, addItem,addDetailItem}) {
+
+//history withRouter in progress
+
+function CollectionItem({item, addItem,addDetailItem,history}) {
     const {name,price,imageUrl,miles,transmission,color} = item;
     return (
         <div className="collection-item">
@@ -34,7 +38,10 @@ function CollectionItem({item, addItem,addDetailItem}) {
              
 
 
-                <CustomButton onClick={() => addDetailItem(item)}className="detail" >
+                <CustomButton onClick={() => addDetailItem(item)
+                // ,
+                // history.push('/detail')
+                }className="detail" >
                     View Details
                 </CustomButton>
 
@@ -49,4 +56,4 @@ const mapDispatchToProps = dispatch => ({
     addDetailItem: item => dispatch(addDetailItem(item))
 })
 
-export default connect(null, mapDispatchToProps)(CollectionItem)
+export default withRouter(connect(null, mapDispatchToProps)(CollectionItem))

@@ -9,7 +9,7 @@ import detailReducer from "./detail/detail.reducer"
 const persistConfig = {
     key: 'root',
     storage,
-    whitelist: ['cart']
+    whitelist: ['cart','detail']
   };
   
   const rootReducer = combineReducers({
@@ -19,5 +19,5 @@ const persistConfig = {
     shop: shopReducer,
     detail: detailReducer
   });
-  
+   
   export default persistReducer(persistConfig, rootReducer);
