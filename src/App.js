@@ -12,6 +12,7 @@ import Checkout from './pages/checkout/Checkout.page';
 // import {createStructuredSelector} from "reselect";
 import React from 'react';
 import CollectionDetail from './components/collection-detail/CollectionDetail.component';
+import DetailPage from './pages/detail-page/DetailPage';
 
 class App extends React.Component {
 
@@ -32,8 +33,9 @@ class App extends React.Component {
         <Route exact path='/' component={HomePage} />
         <Route path='/shop' component={ShopPage} />
         <Route  path='/checkout' component={Checkout} />
-        <Route  path='/detail' component={CollectionDetail} />
+        <Route exact path='/detail' component={DetailPage} />
         
+       
        
        
        

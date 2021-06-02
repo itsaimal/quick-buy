@@ -1,25 +1,37 @@
-.collection-item {
-  width: 70%;
-  display: flex;
+.detail-item {
+  width: 100%;
+ height: 100%;
+   display: flex;
   // flex-direction: column;
-  height: 300px;
+  // height: 100%;
   // align-items: center;
-  position: relative;
-  background-color: rgb(46, 43, 43);
+   position: relative;
+  // background-color: rgb(46, 43, 43);
   margin-left: 20px;
   box-shadow: 20px;
   border-radius: 15px 50px;
+ 
   
  
-  .image {
-    width: 22vw;
-    height: 93%;
-    background-size: cover;
-    background-position: center;
-    margin: 10px 10px;
-    border-radius: 15px 50px;
-  }
+  // .image {
+  //   width: 22vw;
+  //   height: 93%;
+  //   background-size: cover;
+  //   background-position: center;
+  //   margin: 10px 10px;
+  //   border-radius: 15px 50px;
+  // }
 
+
+ 
+
+  
+  .remove-detail {
+    position: absolute;
+    top: 10px;
+     right: -50%;
+    cursor: pointer;
+  }
 
   .detail{
     height: 15%;
@@ -27,50 +39,53 @@
     position: absolute;
     right: 10px;
     top: 40%;
-  }
-
-
-
-  .fav-button{
-    width: 50px;
-    
-    
-    position: absolute;
-    top: 20px;
-    left:26%;
-    cursor: pointer;
-    // display: none;
-    &:hover{
-      opacity: 0.7;
-    }
     
   }
-  &:hover{
-  .image{
-    opacity: 0.8;
 
 
-    }
-    .custom-button{
-      opacity: 0.85;
-      display: flex;
-    }
-  }
+
+  // .fav-button{
+  //   width: 50px;
+    
+    
+  //   position: absolute;
+  //   top: 20px;
+  //   left:26%;
+  //   cursor: pointer;
+  //   // display: none;
+  //   &:hover{
+  //     opacity: 0.7;
+  //   }
+    
+  // }
+  // &:hover{
+  // .image{
+  //   opacity: 0.8;
+
+
+  //   }
+  //   .custom-button{
+  //     opacity: 0.85;
+  //     display: flex;
+  //   }
+  // }
 
 
   
 
-  .collection-footer {
+  .detail-footer {
     
-    margin-top: 80px;
-    width: 20%;
+    margin-top: 60px;
+    width: 5%;
     height: 5%;
-    // margin-left: 30px;
+     margin-left: 15%;
     display: grid;
     grid-template-columns:1fr 1fr;
-    gap: 50px;
+    gap: 80%;
     // justify-content: space-between;
     font-size: 18px;
+    //  background-color: rgb(46, 43, 43);
+  
 
   
 

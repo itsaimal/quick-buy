@@ -5,7 +5,7 @@ import {connect} from "react-redux"
 import {addItem} from "../../redux/cart/cart.action"
 import favorite from "../../image/favourites.png"
 import {addDetailItem} from "../../redux/detail/detail.action"
-import {withRouter} from "react-router-dom"
+import {withRouter,Link} from "react-router-dom"
 
 
 //history withRouter in progress
@@ -37,14 +37,16 @@ function CollectionItem({item, addItem,addDetailItem,history}) {
                    <img className="fav-button" onClick={() => addItem(item)} src={favorite} alt="favorite"/>
              
 
-
-                <CustomButton onClick={() => addDetailItem(item)
-                // ,
-                // history.push('/detail')
+<Link to="/detail">
+                <CustomButton onClick={() => 
+                 
+                addDetailItem(item)
+                //  ,
+                //  history.push('/detail')
                 }className="detail" >
                     View Details
                 </CustomButton>
-
+</Link>
            
             
         </div>

@@ -11,7 +11,8 @@ const SHOP_DATA = {
           price: 17490,
           transmission: 'Automatic',
           color: 'Red',
-          miles: 0
+          miles: 0,
+          imageUrl2: 'https://i.pinimg.com/originals/d2/a4/d5/d2a4d5ec5df866e52f86641a71e74b35.png'
          
         },
         {

@@ -11,7 +11,9 @@ function CollectionDetail({detailItems}) {
 
     return (
         <div className='details'>
-        <div className='cart-items'>
+        <div
+        //  className='detail-items'
+         >
           
           {  detailItems.map(detail => (
               <DetailItem key={detail.id} item={detail} />
