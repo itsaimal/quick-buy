@@ -6,7 +6,7 @@ export const addItemToDetail = (detailItems,detailItemToAdd) =>
     if(existingDetailItem){
         return detailItems.map(detailItem => 
             detailItem.id === detailItemToAdd.id ? {...detailItem
-                // ,quantity: cartItem.quantity + 1
+                // ,quantity: detailItem.quantity + 1
             }: detailItem )
     }
 

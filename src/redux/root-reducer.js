@@ -17,7 +17,7 @@ const persistConfig = {
     cart: cartReducer,
     directory: directoryReducer,
     shop: shopReducer,
-    detail: detailReducer
+     detail: detailReducer
   });
    
   export default persistReducer(persistConfig, rootReducer);
