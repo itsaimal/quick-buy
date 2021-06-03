@@ -15,6 +15,12 @@ const detailReducer = ( state = INITIAL_STATE, action) => {
                    
                 ...state,
                 detailItems: addItemToDetail(state.detailItems,action.payload)
+            };
+            case DetailActionTypes.REMOVE_ITEM: 
+            return {
+                ...state,
+                detailItems: removeItemFromDetail(state.detailItems,
+                    action.payload)
             }
 
             case DetailActionTypes.CLEAR_ITEM_FROM_DETAIL:

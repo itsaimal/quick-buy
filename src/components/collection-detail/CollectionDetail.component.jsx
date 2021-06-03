@@ -11,6 +11,7 @@ function CollectionDetail({detailItems}) {
 
     return (
         <div className='details'>
+       
         <div
         //  className='detail-items'
          >

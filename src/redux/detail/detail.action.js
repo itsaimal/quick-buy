@@ -10,3 +10,9 @@ export const ClearItemFromDetail = item => ({
     type: DetailActionTypes.CLEAR_ITEM_FROM_DETAIL,
     payload:item
 })
+
+
+export const removeItem = item => ({
+    type: DetailActionTypes.REMOVE_ITEM,
+    payload: item
+})

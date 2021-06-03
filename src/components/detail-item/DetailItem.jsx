@@ -1,6 +1,6 @@
 import React from 'react'
 import "./DetailItem.scss"
-import {ClearItemFromDetail} from "../../redux/detail/detail.action"
+import {ClearItemFromDetail, removeItem} from "../../redux/detail/detail.action"
 import {connect} from "react-redux"
 
 import ImageGallery from 'react-image-gallery';
@@ -9,7 +9,7 @@ import ImageGallery from 'react-image-gallery';
  import "../../../node_modules/react-image-gallery/styles/scss/image-gallery.scss";
 
 
-function DetailItem({item,clearItem}) {
+function DetailItem({item,clearItem,removeItem}) {
 
     const {imageUrl,price,name,imageUrl2,color,miles,transmission} = item;
 
@@ -39,7 +39,11 @@ function DetailItem({item,clearItem}) {
 
        <ImageGallery items={images} />;
 
-       <button className='remove-detail' onClick={() => clearItem(item)}>
+       <button className='remove-detail' onClick={() => clearItem(item)}
+       onClick={
+         () => removeItem(item)}
+        >
+
           &#10005;
         </button>
 
@@ -64,7 +68,8 @@ function DetailItem({item,clearItem}) {
 
 const mapDispatchToProps = dispatch => ({
 
-   clearItem: item => dispatch(ClearItemFromDetail(item))
+   clearItem: item => dispatch(ClearItemFromDetail(item)),
+   removeItem: item => dispatch(removeItem(item))
     
 })
 

@@ -14,3 +14,19 @@ export const addItemToDetail = (detailItems,detailItemToAdd) =>
 }
 
 
+export const removeItemFromDetail = (detailItems, detailItemToRemove) => {
+
+const existingDetailItem = detailItems.find(
+    detailItem => detailItem.id === detailItemToRemove.id
+)
+
+if(existingDetailItem.quantity === 1){
+    return detailItems.filter(detailItem => detailItem.id !== detailItemToRemove.id)
+}
+
+return detailItems.map(
+    detailItem => detailItem.id === detailItemToRemove.id ?
+    {...detailItem, quantity: detailItem.quantity -1} : detailItem
+)
+}
+
