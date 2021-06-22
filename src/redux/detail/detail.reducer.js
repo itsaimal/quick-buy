@@ -1,8 +1,10 @@
 import DetailActionTypes from "./detail.types"
 import {addItemToDetail,removeItemFromDetail} from "./detail.utils"
+import SHOP_DATA from "../../pages/shop/shop.data"
+
 
 const INITIAL_STATE = {
-    detailItems: []
+    detailItems: SHOP_DATA
 }
 
 

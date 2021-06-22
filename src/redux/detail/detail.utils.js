@@ -10,7 +10,7 @@ export const addItemToDetail = (detailItems,detailItemToAdd) =>
             }: detailItem )
     }
 
-    return [...detailItems, {...detailItemToAdd, quantity: 1}]
+    return [ {...detailItemToAdd, quantity: 0}]
 }
 
 
@@ -20,7 +20,7 @@ const existingDetailItem = detailItems.find(
     detailItem => detailItem.id === detailItemToRemove.id
 )
 
-if(existingDetailItem.quantity === 1){
+if(existingDetailItem){
     return detailItems.filter(detailItem => detailItem.id !== detailItemToRemove.id)
 }
 

@@ -1,9 +1,10 @@
 import React from 'react'
 import CollectionDetail from "../../components/collection-detail/CollectionDetail.component"
+import "./DetailPage.styles.scss"
 
 function DetailPage() {
     return (
-        <div>
+        <div className="detail-page">
             <CollectionDetail/>
         </div>
     )

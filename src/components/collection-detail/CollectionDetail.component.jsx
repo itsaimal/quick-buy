@@ -16,8 +16,8 @@ function CollectionDetail({detailItems}) {
         //  className='detail-items'
          >
           
-          {  detailItems.map(detail => (
-              <DetailItem key={detail.id} item={detail} />
+          {  detailItems .filter((item, idx) => idx < 1).map(item => (
+              <DetailItem key={item.id} item={item} />
             ))
           }
         </div>
