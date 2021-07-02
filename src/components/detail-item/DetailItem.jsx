@@ -1,50 +1,48 @@
 import React from 'react'
 import "./DetailItem.scss"
-import {ClearItemFromDetail, removeItem} from "../../redux/detail/detail.action"
+import {clearItemFromCart ,addItem,removeItem} from "../../redux/cart/cart.action"
 import {connect} from "react-redux"
 
-import ImageGallery from 'react-image-gallery';
+
 
 
  import "../../../node_modules/react-image-gallery/styles/scss/image-gallery.scss";
 
+ import AwesomeSlider from 'react-awesome-slider';
+ import 'react-awesome-slider/dist/styles.css';
+
+ import {useHistory} from "react-router-dom";
+
 
 function DetailItem({item,clearItem,removeItem}) {
 
-    const {imageUrl,price,name,imageUrl2,color,miles,transmission} = item;
+    const {imageUrl,price,name,imageUrl2,color,miles,transmission,imageUrl3} = item;
+
+    const history = useHistory();
 
 
-    const images = [
-      {
-        original: imageUrl2,
-        thumbnail: imageUrl2,
-      },
-      {
-        original: imageUrl,
-        thumbnail: imageUrl,
-      },
-      {
-        original: 'https://picsum.photos/id/1019/1000/600/',
-        thumbnail: 'https://picsum.photos/id/1019/250/150/',
-      },
-    ];
+   
 
    
 
     return (
         <div className="detail-item">
        
-       {/* <div className="image" style={{backgroundImage:`url(${imageUrl})`}}/>
-       */}
+    
+       <div className="slider">
 
-       <ImageGallery items={images} />;
+       <AwesomeSlider >
+    <div data-src={imageUrl} />
+    <div data-src={imageUrl2} />
+    <div data-src={imageUrl3} />
+  </AwesomeSlider>
+</div>
 
-       <button className='remove-detail' onClick={() => clearItem(item)}
-       onClick={
-         () => removeItem(item)}
-        >
 
-          &#10005;
+<button className='remove-button' onClick={() => {clearItem(item); history.push("/")}}  
+
+ >
+          Close
         </button>
 
        <div className="detail-footer">
@@ -67,11 +65,10 @@ function DetailItem({item,clearItem,removeItem}) {
 }
 
 const mapDispatchToProps = dispatch => ({
-
-   clearItem: item => dispatch(ClearItemFromDetail(item)),
-   removeItem: item => dispatch(removeItem(item))
-    
-})
+  clearItem: item => dispatch(clearItemFromCart(item)),
+ 
+  removeItem: item => dispatch(removeItem(item))
+});
 
 
 export default connect(null,mapDispatchToProps)(DetailItem)

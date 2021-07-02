@@ -12,13 +12,17 @@ import Spinner from "./components/spinner/Spinner"
 // import {connect} from "react-redux"
 // import {createStructuredSelector} from "reselect";
 
-import CollectionDetail from './components/collection-detail/CollectionDetail.component';
+// import CollectionDetail from './components/collection-detail/CollectionDetail.component';
+// import HomePage from './pages/homepage/HomePage';
+// import ShopPage from './pages/shop/ShopPage';
+// import CheckoutPage from './pages/checkout/Checkout.page';
+// import DetailPage from './pages/detail-page/DetailPage';
 
 
-const HomePage = lazy(() => import('./pages/homepage/HomePage'));
-const ShopPage = lazy(() => import("./pages/shop/ShopPage"));
-const Checkout = lazy(() => import("./pages/checkout/Checkout.page"));
-const DetailPage = lazy(() => import("./pages/detail-page/DetailPage"));
+ const HomePage = lazy(() => import('./pages/homepage/HomePage'));
+ const ShopPage = lazy(() => import("./pages/shop/ShopPage"));
+ const CheckoutPage = lazy(() => import("./pages/checkout/Checkout.page"));
+  const DetailPage = lazy(() => import("./pages/detail-page/DetailPage"));
 
 const App = () => {
 
@@ -36,15 +40,17 @@ const App = () => {
     <div>
       <Header />
       <Switch>
-          <Suspense fallback={<Spinner/>}>
+           <Suspense fallback={<Spinner/>}> 
         <Route exact path='/' component={HomePage} />
         <Route path='/shop' component={ShopPage} />
-        <Route  path='/checkout' component={Checkout} />
-        <Route exact path='/detail' component={DetailPage} />
-        
+        <Route  path='/checkout' component={CheckoutPage} />
+         <Route exact path='/detail'  component={DetailPage} />
+           
+         
+         
        
        
-        </Suspense>
+         </Suspense> 
        
       </Switch>
     </div>

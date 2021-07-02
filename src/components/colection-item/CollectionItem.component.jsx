@@ -4,11 +4,9 @@ import "./CollectionItem.scss"
 import {connect} from "react-redux"
 import {addItem} from "../../redux/cart/cart.action"
 import favorite from "../../image/favourites.png"
-import {addDetailItem} from "../../redux/detail/detail.action"
+
 import {withRouter,Link} from "react-router-dom"
 
-
-//history withRouter in progress
 
 function CollectionItem({item, addItem,addDetailItem,history}) {
     const {name,price,imageUrl,miles,transmission,color} = item;
@@ -40,9 +38,8 @@ function CollectionItem({item, addItem,addDetailItem,history}) {
 <Link to="/detail">
                 <CustomButton onClick={() => 
                  
-                addDetailItem(item)
-                //  ,
-                //  history.push('/detail')
+                addItem(item)
+               
                 }className="detail" >
                     View Details
                 </CustomButton>
@@ -55,7 +52,7 @@ function CollectionItem({item, addItem,addDetailItem,history}) {
 
 const mapDispatchToProps = dispatch => ({
     addItem: item => dispatch(addItem(item)),
-    addDetailItem: item => dispatch(addDetailItem(item))
+    
 })
 
 export default withRouter(connect(null, mapDispatchToProps)(CollectionItem))

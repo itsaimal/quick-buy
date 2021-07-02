@@ -6,6 +6,7 @@ import {connect} from "react-redux"
 import {selectCollection} from "../../redux/shop/shop.selectors"
 import CollectionItem from '../../components/colection-item/CollectionItem.component';
 
+
 function Collection({collection}) {
    const {title,items} = collection;
    console.log(collection)
@@ -20,6 +21,9 @@ function Collection({collection}) {
     <CollectionItem className="collection-space" key={item.id} item={item}/>
 ))
     }
+    
+
+
             </div>
             
         </div>

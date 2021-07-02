@@ -1,3 +1,114 @@
+import kia from "../../image/kia.jpg"
+import kia1 from "../../image/kia1.jpg"
+import kiainterior from "../../image/kiainterior.jpg"
+import buick from "../../image/buick.jpg"
+import buick1 from "../../image/buicktwo.jpg"
+import buickinterior from "../../image/buickinterior.jpg"
+import nissan from "../../image/nissan.jpg"
+import nissan1 from "../../image/nissan1.png"
+import nissani from "../../image/nissani.jpg"
+import mazda from "../../image/mazda.jpg"
+ import mazda1 from "../../image/mazda1.jpg"
+ import mazdai from "../../image/mazdai.jpg"
+ import civic from "../../image/civic.jpg"
+ import civic1 from "../../image/civic.jpg"
+ import civici from "../../image/civici.jpg"
+ import corolla from "../../image/corolla.jpg"
+ import corolla1 from "../../image/corolla.jpg"
+import corollai from "../../image/corollai.jpg"
+ import camry from "../../image/camry.jpg"
+ import camry1 from "../../image/camry1.jpg"
+ import camryi from "../../image/camryi.jpg"
+ import accord from "../../image/accord.jpg"
+ import accord1 from "../../image/accord1.jpg"
+ import accordi from "../../image/accordi.jpg"
+ import elentra from "../../image/elentra.jpg"
+ import elentrai from "../../image/elentrai.jpg"
+ import elentra1 from "../../image/elentra1.jpg"
+
+ //second
+ import a8 from "../../image/a8.jpg"
+ import a81 from "../../image/a81.jpg"
+ import a8i from "../../image/a8i.jpg"
+ import bentley from "../../image/bentley.jpg"
+ import bentley1 from "../../image/bentley1.jpg"
+ import bentleyi from "../../image/bentleyi.jpg"
+ import mus from "../../image/mus.jpg"
+ import mus1 from "../../image/mus1.jpg"
+ import musi from "../../image/musi.jpg"
+ import bmw from "../../image/bmw.jpg"
+ import bmw1 from "../../image/bmw1.jpg"
+ import bmwi from "../../image/bmwi.jpg"
+ import rolls from "../../image/rolls.jpg"
+ import rolls1 from "../../image/rolls1.jpg"
+ import rollsi from "../../image/rollsi.jpg"
+ import benz from "../../image/benz.jpg"
+ import benz1 from "../../image/benz1.jpg"
+ import benzi from "../../image/benzi.jpg"
+ import xj from "../../image/xj.jpg"
+ import xj1 from "../../image/xj1.jpg"
+ import xji from "../../image/xji.jpg"
+ import lexus from "../../image/lexus.jpg"
+ import lexus1 from "../../image/lexus1.jpg"
+ import lexusi from "../../image/lexusi.jpg"
+ //third
+ import a3 from "../../image/a3.jpg"
+ import a31 from "../../image/a31.jpg"
+ import a3i from "../../image/a3i.jpg"
+ import ac from "../../image/ac.jpg"
+ import ac1 from "../../image/ac1.jpg"
+ import aci from "../../image/aci.jpg"
+ import vw from "../../image/vw.jpg"
+ import vw1 from "../../image/vw1.jpg"
+ import vwi from "../../image/vwi.jpg"
+ import civich from "../../image/civich.jpg"
+ import civich1 from "../../image/civich1.jpg"
+ import civichi from "../../image/civichi.jpg"
+ import ch from "../../image/ch.jpg"
+ import ch1 from "../../image/ch1.jpg"
+ import chi from "../../image/chi.jpg"
+
+ //forth
+ import x5 from "../../image/x5.jpg"
+ import x51 from "../../image/x51.jpg"
+ import x5i from "../../image/x5i.jpg"
+ import nf from "../../image/nf.jpg"
+ import nf1 from "../../image/nf1.jpg"
+ import nfi from "../../image/nfi.jpg"
+ import jeep from "../../image/jeep.jpg"
+ import jeep1 from "../../image/jeep1.jpg"
+ import jeepi from "../../image/jeepi.jpg"
+ import gmc from "../../image/gmc.jpg"
+ import gmc1 from "../../image/gmc1.jpg"
+ import gmci from "../../image/gmci.jpg"
+ import fordl from "../../image/fordl.jpg"
+ import fordl1 from "../../image/fordl1.jpg"
+ import fordli from "../../image/fordli.jpg"
+ import fordf from "../../image/fordf.jpg"
+ import fordf1 from "../../image/fordf1.jpg"
+ import fordfi from "../../image/fordfi.jpg"
+ import bf from "../../image/bf.jpg"
+ import bf1 from "../../image/bf1.jpg"
+ import bfi from "../../image/bfi.jpg"
+
+ //fifth
+ import bu from "../../image/bu.jpg"
+ import bu1 from "../../image/bu1.jpg"
+ import bui from "../../image/bui.jpg"
+ import cu from "../../image/cu.jpg"
+ import cu1 from "../../image/cu1.jpg"
+ import cui from "../../image/cui.jpg"
+ import cor from "../../image/cor.jpg"
+ import cor1 from "../../image/cor1.jpg"
+ import cori from "../../image/cori.jpg"
+
+
+
+
+
+
+
+
 const SHOP_DATA = {
     sedan: {
       id: 1,
@@ -7,89 +118,108 @@ const SHOP_DATA = {
         {
           id: 1,
           name: 'KIA',
-          imageUrl: 'https://www.autoguide.com/blog/wp-content/uploads//2020/12/2021-Kia-K5-GT-Line-AWD-Review-06-679x453.jpg',
+          imageUrl: kia,
           price: 17490,
           transmission: 'Automatic',
           color: 'Red',
           miles: 0,
-          imageUrl2: 'https://i.pinimg.com/originals/d2/a4/d5/d2a4d5ec5df866e52f86641a71e74b35.png'
+          imageUrl2: kia1,
+          imageUrl3: kiainterior
          
         },
         {
           id: 2,
           name: 'Buick',
-          imageUrl: 'https://cdn.carbuzz.com/gallery-images/840x560/563000/600/563635.jpg',
+          imageUrl: buick,
           price: 23200
           ,
           transmission: 'Manual',
           color: 'Silver',
-          miles: 0
+          miles: 0,
+          imageUrl2: buick1,
+          imageUrl3: buickinterior
         },
         {
           id: 3,
           name: 'Nissan',
-          imageUrl: 'https://cdn.jdpower.com/ArticleImages/2019%20Nissan%20Altima_Photo_01%20720.jpg',
+          imageUrl: nissan,
           price: 19410
           ,
           transmission: 'Automatic',
           color: 'Red',
-          miles: 0
+          miles: 0,
+          imageUrl2: nissan1,
+          imageUrl3: nissani
         },
         {
           id: 4,
           name: 'Mazda',
-          imageUrl: 'https://cdn.jdpower.com/ArticleImages/2018%20Mazda%206_38%20720.jpg',
+          imageUrl: mazda,
           price: 20000
           ,
           transmission: 'Automatic',
           color: 'Red',
-          miles: 0
-        },
+          miles: 0,
+          imageUrl2: mazda1,
+          imageUrl3: mazdai
+         },
+         {
+           id: 5,
+           name: 'Camry',
+           imageUrl: camry,
+           price: 24970,
+           transmission: 'Automatic',
+           color: 'Navy-Blue',
+           miles: 0,
+           imageUrl2: camry1,
+           imageUrl3: camryi
+         },
+         {
+           id: 6,
+           name: 'Corolla',
+           imageUrl: corolla,
+           price: 23615,
+           transmission: 'Automatic',
+           color: 'Silver',
+           miles: 0,
+           imageUrl2: corolla1,
+           imageUrl3: corollai
+         },
         {
-          id: 5,
-          name: 'Camry',
-          imageUrl: 'https://toyota-cms-media.s3.amazonaws.com/wp-content/uploads/2020/02/2021_Avalon_Limited_AWD_Blueprint_007-1500x895.jpg',
-          price: 24970,
-          transmission: 'Automatic',
-          color: 'Navy-Blue',
-          miles: 0
-        },
-        {
-          id: 6,
-          name: 'Corolla',
-          imageUrl: 'https://gaadiwaadi.com/wp-content/uploads/2020/09/2021-toyota-corolla-apex-edition-7.jpg',
-          price: 23615,
-          transmission: 'Automatic',
-          color: 'Silver',
-          miles: 0
-        },
-        {
-          id: 7,
-          name: 'Civic',
-          imageUrl: 'https://www.carscoops.com/wp-content/uploads/2020/06/2020-honda-civic-sedan-usa-1.jpg',
-          price: 22250,
-          transmission: 'Automatic',
-          color: 'Red',
-          miles: 0
-        },
-        {
+           id: 7,
+           name: 'Civic',
+           imageUrl: civic,
+           price: 22250,
+           transmission: 'Automatic',
+           color: 'Red',
+           miles: 0,
+           imageUrl2: civic1,
+           imageUrl3: civici
+         },
+         {
           id: 8,
-          name: 'Elentra',
-          imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5NHvvEuyd8FxMN7m7fPOATM21Foo5lZ_v9A&usqp=CAU',
-          price: 24100,
-          transmission: 'Automatic',
-          color: 'Silver',
-          miles: 0
-        },
-        {
-          id: 9,
-          name: 'Accord',
-          imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/2018_Honda_Accord_front_4.1.18.jpg/1200px-2018_Honda_Accord_front_4.1.18.jpg',
-          price: 24970,
-          transmission: 'Automatic',
-          color: 'Cherry-Red',
-          miles: 0
-        }
+           name: 'Elentra',
+           imageUrl: elentra,
+           price: 24100,
+           transmission: 'Automatic',
+           color: 'Silver',
+           miles: 0,
+           
+           imageUrl2: elentra1,
+           imageUrl3: elentrai
+          
+         },
+         {
+           id: 9,
+           name: 'Accord',
+         imageUrl: accord,
+           price: 24970,
+           transmission: 'Automatic',
+           color: 'Cherry-Red',
+           miles: 0,
+           imageUrl2: accord1,
+           imageUrl3: accordi
+         }
       ]
     },
    luxury: {
@@ -100,74 +230,90 @@ const SHOP_DATA = {
         {
           id: 10,
           name: 'Maserati',
-          imageUrl: 'https://cdn.justluxe.com/classifieds/75078.jpg?comp=2',
+          imageUrl: mus,
           price: 74390,
           transmission: 'Automatic',
-          color: 'Metalic-Gray',
-          miles: 0
+          color: 'White',
+          miles: 0,
+          imageUrl2: mus1,
+          imageUrl3: musi
         },
         {
           id: 11,
           name: 'BMW',
-          imageUrl: 'https://cdn.trendhunterstatic.com/thumbs/luxury-sedan.jpeg',
+          imageUrl: bmw,
           price: 54200,
           transmission: 'Manual',
           color: 'Royal-Blue',
-          miles: 0
+          miles: 0,
+          imageUrl2: bmw1,
+          imageUrl3: bmwi
         },
         {
           id: 12,
           name: 'Audi',
-          imageUrl: 'https://st.motortrend.com/uploads/sites/5/2020/05/2020-Audi-A6-sedan-01.jpg',
+          imageUrl: a8,
           price: 86500,
           transmission: 'Automatic',
           color: 'Metalic-Brown',
-          miles: 0
+          miles: 0,
+          imageUrl2: a81,
+          imageUrl3: a8i
         },
         {
           id: 13,
           name: 'Bentley',
-          imageUrl: 'https://i.ytimg.com/vi/b4Evt3KwWm4/maxresdefault.jpg',
+          imageUrl: bentley,
           price: 177000,
           transmission: 'Automatic',
           color: 'Royal-Gray',
-          miles: 0
+          miles: 0,
+          imageUrl2: bentley1,
+          imageUrl3: bentleyi
         },
         {
           id: 14,
           name: 'Rolls Royce',
-          imageUrl: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2018-rolls-royce-phantom-1536152159.png?crop=1.00xw:1.00xh;0,0&resize=1200:*',
+          imageUrl: rolls,
           price: 330000,
           transmission: 'Automatic',
           color: 'Mate-Black',
-          miles: 0
+          miles: 0,
+          imageUrl2: rolls1,
+          imageUrl3: rollsi
         },
         {
           id: 15,
           name: 'Benz S-Class',
-          imageUrl: 'https://cdn.motor1.com/images/mgl/43yJY/s1/2021-mercedes-benz-s-class-front.webp',
+          imageUrl: benz,
           price: 110850,
           transmission: 'Automatic',
           color: 'Silver',
-          miles: 0
+          miles: 0,
+          imageUrl2: benz1,
+          imageUrl3: benzi
         },
         {
           id: 16,
           name: 'XJ',
-          imageUrl: 'https://i.pinimg.com/originals/24/34/bf/2434bfd2f45bcb0d1701d6e190bd24aa.jpg',
+          imageUrl: xj,
           price: 75700,
           transmission: 'Automatic',
           color: 'Metalic-Gun',
-          miles: 0
+          miles: 0,
+          imageUrl2: xj1,
+          imageUrl3: xji
         },
         {
           id: 17,
           name: 'Lexus',
-          imageUrl: 'https://lexus-cms-media.s3.us-east-2.amazonaws.com/wp-content/uploads/2021/04/2022_ES_Family_009-1500x900.jpg',
+          imageUrl: lexus,
           price: 40000,
           transmission: 'Automatic',
           color: 'Metalic-Gun',
-          miles: 0
+          miles: 0,
+          imageUrl2: lexus1,
+          imageUrl3: lexusi
         }
       ]
     },
@@ -179,47 +325,57 @@ const SHOP_DATA = {
         {
           id: 18,
           name: 'Corolla',
-          imageUrl: 'http://cdn.carbuzz.com/gallery-images/1600/757000/700/757749.jpg',
+          imageUrl: ch,
           price: 20715,
           transmission: 'Automatic',
           color: 'Cherry-Red',
-          miles: 0
+          miles: 0,
+          imageUrl2: ch1,
+          imageUrl3: chi
         },
         {
           id: 19,
           name: 'VW',
-          imageUrl: 'https://www.motorbiscuit.com/wp-content/uploads/2020/09/DB2020AU01263_large-1024x683.jpg',
+          imageUrl: vw,
           price: 32665,
           transmission: 'Automatic',
           color: 'Cherry-Red',
-          miles: 0
+          miles: 0,
+          imageUrl2: vw1,
+          imageUrl3: vwi
         },
         {
           id: 20,
           name: 'A3',
-          imageUrl: 'https://www.motortrend.com/uploads/sites/5/2020/03/2021-Audi-A3-Sportback-8.jpg',
+          imageUrl: a3,
           price: 33300,
           transmission: 'Automatic',
           color: 'Indigo',
-          miles: 0
+          miles: 0,
+          imageUrl2: a31,
+          imageUrl3: a3i
         },
         {
           id: 21,
           name: 'A-Class',
-          imageUrl: 'https://cdn.motor1.com/images/mgl/8yEze/s3/2018-mercedes-a-class-hatchback-with-night-package.jpg',
+          imageUrl: ac,
           price: 33650,
           transmission: 'Automatic',
           color: 'Cherry-Red',
-          miles: 0
+          miles: 0,
+          imageUrl2: ac1,
+          imageUrl3: aci
         },
         {
           id: 22,
           name: 'Civic',
-          imageUrl: 'https://www.cnet.com/a/img/GAgomH5XDFGMUEnwza5-u67D5Zs=/1200x675/2020/06/08/4c5a5a0e-5c31-47b3-9d84-72e21e7fed08/civic-rear.jpg',
+          imageUrl: civich,
           price: 22200,
           transmission: 'Automatic',
           color: 'Gray',
-          miles: 0
+          miles: 0,
+          imageUrl2: civich1,
+          imageUrl3: civichi
         }
       ]
     },
@@ -231,65 +387,79 @@ const SHOP_DATA = {
         {
           id: 23,
           name: 'Nissan',
-          imageUrl: 'https://www.nissanusa.com/content/dam/Nissan/us/experience_nissan/newsevents/Nissan-off-road-4x4-vehicles/nissan-off-road-4x4-vehicle.jpg.ximg.l_12_m.smart.jpg',
+          imageUrl: nf,
           price: 27500,
           transmission: 'Automatic',
           color: 'Dirty-Red',
-          miles: 0
+          miles: 0,
+          imageUrl2: nf1,
+          imageUrl3: nfi
         },
         {
           id: 24,
           name: 'Bentley',
-          imageUrl: 'https://media.ed.edmunds-media.com/bentley/bentayga/2020/oem/2020_bentley_bentayga_4dr-suv_speed_fq_oem_1_1600.jpg',
+          imageUrl: bf,
           price: 177000,
           transmission: 'Automatic',
           color: 'Orange',
-          miles: 0
+          miles: 0,
+          imageUrl2: bf1,
+          imageUrl3: bfi
         },
         {
           id: 25,
           name: 'Jeep',
-          imageUrl: 'https://cars.usnews.com/static/images/article/202010/128215/9-use--JP021_077GClbep6ohfvarrfhrv7uodqn9svh_Cropped_640x420.jpg',
+          imageUrl: jeep,
           price: 45600,
           transmission: 'Automatic',
           color: 'Grey',
-          miles: 0
+          miles: 0,
+          imageUrl2: jeep1,
+          imageUrl3: jeepi
         },
         {
           id: 26,
           name: 'Ford',
-          imageUrl: 'https://pictures.dealer.com/p/phillongatchapelhillsfordfd/1174/effe9dc150146ebc289cb9d6c26e15e4x.jpg?impolicy=downsize&w=568',
+          imageUrl: fordf,
           price: 52340,
           transmission: 'Automatic',
           color: 'Blue',
-          miles: 0
+          miles: 0,
+          imageUrl2: fordf1,
+          imageUrl3: fordfi
         },
         {
           id: 27,
           name: 'Ford Lobo',
-          imageUrl: 'https://www.usa-car-import.com/upload/heading/usa-car-import-ford-f-150-platinum-4x4-super-crew-500x337_1.jpg',
+          imageUrl: fordl,
           price: 28940,
           transmission: 'Automatic',
           color: 'White',
-          miles: 0
+          miles: 0,
+          imageUrl2: fordl1,
+          imageUrl3: fordli
         },
         {
           id: 28,
           name: 'GMC',
-          imageUrl: 'https://cdn.hiconsumption.com/wp-content/uploads/2018/04/GMC-Yukon.jpg',
+          imageUrl: gmc,
           price: 59400,
           transmission: 'Automatic',
           color: 'Black',
-          miles: 0
+          miles: 0,
+          imageUrl2: gmc1,
+          imageUrl3: gmci
         },
         {
           id: 29,
           name: 'X5',
-          imageUrl: 'https://d2snyq93qb0udd.cloudfront.net/prod/28378_01-bmw-x5-german-suv-born-in-the-usa.jpg',
+          imageUrl: x5,
           price: 61700,
           transmission: 'Automatic',
           color: 'Blue',
-          miles: 0
+          miles: 0,
+          imageUrl2: x51,
+          imageUrl3: x5i
         }
       ]
     },
@@ -301,57 +471,37 @@ const SHOP_DATA = {
         {
           id: 30,
           name: 'Corolla',
-          imageUrl: '',
+          imageUrl: cu,
           price: 7800,
           transmission: 'Manual',
           color: 'Cherry-Red',
-          miles: 70000
+          miles: 70000,
+          imageUrl2: cu1,
+          imageUrl3: cui
         },
         {
           id: 31,
           name: 'Buick',
-          imageUrl: 'https://autotras.com/images/728/buick-regal-gs-usa.jpg',
+          imageUrl: bu,
           price: 11988,
           transmission: 'Automatic',
           color: 'Blue',
-          miles: 90000
+          miles: 90000,
+          imageUrl2: bu1,
+          imageUrl3: bui
         },
         {
           id: 32,
           name: 'Chevrolet',
-          imageUrl: 'https://www.auto-data.net/images/f111/Chevrolet-Cruze-Sedan_1.jpg',
+          imageUrl: cor,
           price: 12567,
           transmission: 'Automatic',
           color: 'White',
-          miles: 60000
+          miles: 60000,
+          imageUrl2: cor1,
+          imageUrl3: cori
         },
-        {
-          id: 33,
-          name: 'Mitsubishi',
-          imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/37/2015_Mitsubishi_Mirage_%28LA_MY15%29_LS_hatchback_%2822644970463%29.jpg',
-          price: 7500,
-          transmission: 'Automatic',
-          color: 'Green',
-          miles: 78966
-        },
-        {
-          id: 34,
-          name: 'Suzuki SX4',
-          imageUrl: 'https://autotras.com/images/1035/suzuki-sx4-sedan-used.jpg',
-          price: 4234,
-          transmission: 'Automatic',
-          color: 'Silver',
-          miles: 145666
-        },
-        {
-          id: 35,
-          name: 'Camry',
-          imageUrl: 'https://i.pinimg.com/736x/ae/99/55/ae9955f4d74651211287720b1ec19614.jpg',
-          price: 6740,
-          transmission: 'Automatic',
-          color: 'Green',
-          miles: 45630
-        }
+       
       ]
     }
   };
